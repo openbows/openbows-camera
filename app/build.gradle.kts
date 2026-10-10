@@ -36,7 +36,7 @@ android {
         minSdk = 26
         targetSdk = 35
         versionCode = 15
-        versionName = "1.5.10"
+        versionName = "1.5.11"
         buildConfigField("String[]", "TIANDITU_TKS", tiandituKeysLiteral())
         ndk {
             abiFilters += listOf("armeabi-v7a", "arm64-v8a")
