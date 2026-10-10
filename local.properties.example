@@ -1,0 +1,13 @@
+## Copy to local.properties and fill in values.
+## sdk.dir is usually written by Android Studio.
+# sdk.dir=C\:\\Users\\<you>\\AppData\\Local\\Android\\Sdk
+## 天地图 tk（最多 5 个，轮询分摊配额；也可只填 TIANDITU_TK_1）
+TIANDITU_TK_1=
+TIANDITU_TK_2=
+TIANDITU_TK_3=
+TIANDITU_TK_4=
+TIANDITU_TK_5=
+RELEASE_STORE_FILE=keystore/openbows-release.jks
+RELEASE_STORE_PASSWORD=
+RELEASE_KEY_ALIAS=openbows_release
+RELEASE_KEY_PASSWORD=
