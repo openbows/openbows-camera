@@ -1,3 +1,10 @@
+/*
+ * Copyright (c) 2026 Sun, Jingwen (http://www.openbows.com)
+ * Openbows-camera is licensed under Mulan PSL v2. You can use this software according to the terms and conditions of the Mulan PSL v2. You may obtain a copy of Mulan PSL v2 at: http://license.coscl.org.cn/MulanPSL2
+ * THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
+ * See the Mulan PSL v2 for more details.
+ */
+
 import java.util.Properties
 
 plugins {
@@ -35,8 +42,8 @@ android {
         applicationId = "com.openbows.camera"
         minSdk = 26
         targetSdk = 35
-        versionCode = 17
-        versionName = "1.5.13"
+        versionCode = 18
+        versionName = "1.5.14"
         buildConfigField("String[]", "TIANDITU_TKS", tiandituKeysLiteral())
         ndk {
             abiFilters += listOf("armeabi-v7a", "arm64-v8a")

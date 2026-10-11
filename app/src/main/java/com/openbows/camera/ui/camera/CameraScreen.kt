@@ -1,3 +1,10 @@
+/*
+ * Copyright (c) 2026 Sun, Jingwen (http://www.openbows.com)
+ * Openbows-camera is licensed under Mulan PSL v2. You can use this software according to the terms and conditions of the Mulan PSL v2. You may obtain a copy of Mulan PSL v2 at: http://license.coscl.org.cn/MulanPSL2
+ * THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
+ * See the Mulan PSL v2 for more details.
+ */
+
 package com.openbows.camera.ui.camera
 
 import android.graphics.RectF
@@ -159,7 +166,8 @@ fun CameraScreen(
 
     ModalNavigationDrawer(
         drawerState = drawerState,
-        gesturesEnabled = drawerState.isOpen,
+        // 允许从左缘向右滑动打开关于页；打开后也可手势关闭
+        gesturesEnabled = true,
         drawerContent = {
             ModalDrawerSheet(
                 modifier = Modifier
@@ -420,10 +428,10 @@ private fun AboutDrawerContent() {
         AboutRow("版本号", BuildConfig.VERSION_NAME)
         AboutRow("适用平台", stringResource(R.string.about_platform))
         AboutRow("系统要求", stringResource(R.string.about_system_req))
-        AboutRow("版权所有", stringResource(R.string.about_copyright))
         AboutRow("发布日期", stringResource(R.string.about_release_date))
+        AboutRow("版权所有", stringResource(R.string.about_copyright))
         AboutRow("开发者", stringResource(R.string.about_developer))
-        AboutRow("邮箱", stringResource(R.string.about_email))
+        AboutRow("网站地址", stringResource(R.string.about_website))
         Spacer(Modifier.height(28.dp))
         Row(
             Modifier.fillMaxWidth(),

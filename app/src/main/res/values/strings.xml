@@ -1,3 +1,10 @@
+<!--
+  Copyright (c) 2026 Sun, Jingwen (http://www.openbows.com)
+  Openbows-camera is licensed under Mulan PSL v2. You can use this software according to the terms and conditions of the Mulan PSL v2. You may obtain a copy of Mulan PSL v2 at: http://license.coscl.org.cn/MulanPSL2
+  THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
+  See the Mulan PSL v2 for more details.
+-->
+
 <resources>
     <string name="app_name">工程相机</string>
     <string name="permission_rationale">现场取证拍照需要相机与定位权限，用于拍摄并在照片上标注时间、地址与坐标。</string>
@@ -28,12 +35,12 @@
     <string name="default_template_name">现场巡检</string>
     <string name="storage_hint">照片保存在 Pictures/OpenbowsCamera</string>
     <string name="about_title">关于</string>
-    <string name="about_software_name">工程相机</string>
+    <string name="about_software_name">工程相机 Openbows Camera</string>
     <string name="about_platform">仅 Android 竖屏</string>
     <string name="about_system_req">Android 8.0（API 26）及以上</string>
-    <string name="about_developer">孙景文</string>
-    <string name="about_email">63451373@qq.com</string>
     <string name="about_release_date">2026-10-05</string>
-    <string name="about_copyright">Openbows.com</string>
-    <string name="about_oss_tip">建议：本开源项目在 https://github.com/openbows/openbows-camera 下载源码。再访问天地图政府网站，申请 KEY 填写在 local.properties 中。重新编译，即可生成专属工程相机。彻底解决配额不足问题。</string>
+    <string name="about_copyright">Sun, Jingwen</string>
+    <string name="about_developer">孙景文 (Email: 63451373@qq.com)</string>
+    <string name="about_website">http://www.openbows.com</string>
+    <string name="about_oss_tip">小提示：本项目源码开放且完全免费，请在国内国际等开源网搜索 openbows-camera 并下载源码。鼓励使用者独立申请TIANDITU_TK，重新编译，生成专属工程相机，可以完整解决企业或个人对工程相机的需求。</string>
 </resources>
