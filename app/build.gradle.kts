@@ -42,8 +42,8 @@ android {
         applicationId = "com.openbows.camera"
         minSdk = 26
         targetSdk = 35
-        versionCode = 18
-        versionName = "1.5.14"
+        versionCode = 19
+        versionName = "1.5.15"
         buildConfigField("String[]", "TIANDITU_TKS", tiandituKeysLiteral())
         ndk {
             abiFilters += listOf("armeabi-v7a", "arm64-v8a")

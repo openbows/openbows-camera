@@ -18,6 +18,7 @@ import androidx.camera.view.PreviewView
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.gestures.detectHorizontalDragGestures
 import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.gestures.detectTransformGestures
 import androidx.compose.foundation.layout.Arrangement
@@ -258,6 +259,21 @@ fun CameraScreen(
                                     showRemarkDialog = true
                                 }
                             },
+                        )
+                    }
+                    // 取景区域向右滑打开关于页（PreviewView 会吞掉 Drawer 边缘手势）
+                    .pointerInput(drawerState) {
+                        val openThreshold = with(density) { 72.dp.toPx() }
+                        var totalDx = 0f
+                        detectHorizontalDragGestures(
+                            onDragStart = { totalDx = 0f },
+                            onHorizontalDrag = { _, dragAmount -> totalDx += dragAmount },
+                            onDragEnd = {
+                                if (totalDx > openThreshold) {
+                                    scope.launch { drawerState.open() }
+                                }
+                            },
+                            onDragCancel = { totalDx = 0f },
                         )
                     },
             ) {

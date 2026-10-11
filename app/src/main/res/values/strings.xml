@@ -40,7 +40,7 @@
     <string name="about_system_req">Android 8.0（API 26）及以上</string>
     <string name="about_release_date">2026-10-05</string>
     <string name="about_copyright">Sun, Jingwen</string>
-    <string name="about_developer">孙景文 (Email: 63451373@qq.com)</string>
+    <string name="about_developer">孙景文 (63451373@qq.com)</string>
     <string name="about_website">http://www.openbows.com</string>
-    <string name="about_oss_tip">小提示：本项目源码开放且完全免费，请在国内国际等开源网搜索 openbows-camera 并下载源码。鼓励使用者独立申请TIANDITU_TK，重新编译，生成专属工程相机，可以完整解决企业或个人对工程相机的需求。</string>
+    <string name="about_oss_tip">小提示：本项目源码开放且完全免费，请在国内国际等开源网站下载源码。鼓励使用者独自申请TIANDITU_TK密钥，重新编译。生成专属工程相机，可以完整解决企业或个人对工程相机的需求。</string>
 </resources>
