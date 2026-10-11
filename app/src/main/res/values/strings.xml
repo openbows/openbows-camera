@@ -35,4 +35,5 @@
     <string name="about_email">63451373@qq.com</string>
     <string name="about_release_date">2026-10-05</string>
     <string name="about_copyright">Openbows.com</string>
+    <string name="about_oss_tip">建议：本开源项目在 https://github.com/openbows/openbows-camera 下载源码。再访问天地图政府网站，申请 KEY 填写在 local.properties 中。重新编译，即可生成专属工程相机。彻底解决配额不足问题。</string>
 </resources>

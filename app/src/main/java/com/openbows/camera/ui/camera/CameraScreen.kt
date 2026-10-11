@@ -30,13 +30,16 @@ import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Cameraswitch
 import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.FlashOff
 import androidx.compose.material.icons.filled.FlashOn
+import androidx.compose.material.icons.outlined.Lightbulb
 import androidx.compose.material.icons.outlined.PhotoLibrary
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.DrawerValue
@@ -400,7 +403,10 @@ private fun AboutDrawerContent() {
     Column(
         Modifier
             .fillMaxWidth()
+            .fillMaxHeight()
             .statusBarsPadding()
+            .navigationBarsPadding()
+            .verticalScroll(rememberScrollState())
             .padding(horizontal = 20.dp, vertical = 24.dp),
     ) {
         Text(
@@ -418,6 +424,27 @@ private fun AboutDrawerContent() {
         AboutRow("发布日期", stringResource(R.string.about_release_date))
         AboutRow("开发者", stringResource(R.string.about_developer))
         AboutRow("邮箱", stringResource(R.string.about_email))
+        Spacer(Modifier.height(28.dp))
+        Row(
+            Modifier.fillMaxWidth(),
+            verticalAlignment = Alignment.Top,
+        ) {
+            Icon(
+                imageVector = Icons.Outlined.Lightbulb,
+                contentDescription = null,
+                tint = Color(0xFFFFC107),
+                modifier = Modifier
+                    .padding(top = 2.dp)
+                    .size(20.dp),
+            )
+            Spacer(Modifier.width(10.dp))
+            Text(
+                stringResource(R.string.about_oss_tip),
+                color = Color.White.copy(alpha = 0.72f),
+                style = MaterialTheme.typography.bodySmall,
+                lineHeight = 18.sp,
+            )
+        }
     }
 }
 

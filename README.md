@@ -3,7 +3,7 @@
 Android 竖屏水印相机：拍照时将时间、地址、坐标、海拔、天气、备注等现场信息**烧录进 JPEG**，便于巡检、验收与取证留档。
 
 - 包名：`com.openbows.camera`
-- 当前版本：`1.5.11`（versionCode 15）
+- 当前版本：`1.5.13`（versionCode 17）
 - 系统要求：Android 8.0（API 26）及以上，仅竖屏
 - 技术栈：Kotlin · Jetpack Compose · CameraX · Room · DataStore · OkHttp
 
